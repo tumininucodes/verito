@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">verito</string>
+    <string name="task_name">Task name</string>
+    <string name="important_task">Important task</string>
+</resources>

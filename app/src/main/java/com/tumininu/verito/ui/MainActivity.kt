@@ -1,7 +1,8 @@
-package com.tumininu.verito
+package com.tumininu.verito.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.tumininu.verito.R
 
 class MainActivity : AppCompatActivity() {
 

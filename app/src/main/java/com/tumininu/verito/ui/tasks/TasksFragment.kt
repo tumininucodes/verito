@@ -1,7 +1,10 @@
 package com.tumininu.verito.ui.tasks
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.View
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
@@ -33,5 +36,14 @@ class TasksFragment : Fragment(R.layout.fragment_task) {
         viewModel.tasks.observe(viewLifecycleOwner) {
             taskAdapter.submitList(it)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_fragment_tasks, menu)
+
+        val searchItem = menu.findItem(R.id.action_search)
+        val searchView = searchItem.actionView as SearchView
+
+
     }
 }
